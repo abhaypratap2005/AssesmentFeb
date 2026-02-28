@@ -12,8 +12,7 @@ public class StreamApiSolution {
 
         List<String> ownersWithNoCars = CarRepository.getOwners()
                 .stream()
-                .filter(o -> o.getCars() == null || o.getCars().isEmpty())
-                .map(Owner::getName)
+                .filter(o -> o.getCars() == null || o.getCars().isEmpty()).map(Owner::getName)
                 .collect(Collectors.toList());
 
         System.out.println(ownersWithNoCars);

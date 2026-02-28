@@ -1,4 +1,4 @@
-package Question2nd;
+package question2nd;
 
 public class UserExistsException extends RuntimeException {
 
